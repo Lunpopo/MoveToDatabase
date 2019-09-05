@@ -143,15 +143,15 @@ Clean module:
 
 * 将 TXT 大文件导入database，暂时只支持单个TXT文件导入，多进程有空再说
 
-	python3 move_to_database.py -t txt_file -D your_database_name -T your_table_name -F='----' -c username password
+		python3 move_to_database.py -t txt_file -D your_database_name -T your_table_name -F='----' -c username password
+		
+		-D 选择要导入的数据库
 
-	-D 选择要导入的数据库
+		-T 选择要导入的表，就算没有表也行，会自动创建一个，创建的表的结构就是 -c 指定的表结构
 
-	-T 选择要导入的表，就算没有表也行，会自动创建一个，创建的表的结构就是 -c 指定的表结构
+		-F TXT文件数据分隔符，例如 ---- 分隔 username 和 password
 
-	-F TXT文件数据分隔符，例如 ---- 分隔 username 和 password
-
-	-c 列名，这个必须指定，例如表的结构就是 username 和 password
+		-c 列名，这个必须指定，例如表的结构就是 username 和 password
 
 ## Author
 [Lunpopo](https://github.com/Lunpopo/MoveToDatabase)
