@@ -14,4 +14,5 @@ __pycache__/
 */.idea/
 .idea/
 
-saved_png
+*/settings.py
+lib/settings.py
